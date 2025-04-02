@@ -1,0 +1,14 @@
+config:
+  target: "http://localhost:5000"
+  phases:
+    - duration: 10    # тест будет длиться 10 секунд
+      arrivalRate: 1000  # 100 запросов в секунду (10 секунд * 1000 = 10000 запросов)
+scenarios:
+  - flow:
+      - post:
+          url: "/api/user/update-balance"
+          headers:
+            Content-Type: "application/json"
+          json:
+            userId: 1
+            amount: -2

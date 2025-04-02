@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "lib": ["ES2021"],
+    "types": ["node"],
+    "typeRoots": ["node_modules/@types"],
+    "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "pretty": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "allowJs": true,
+    "noEmit": false,
+    "resolveJsonModule": true,
+    "importHelpers": true,
+    "rootDir": ".",
+    "esModuleInterop": true
+  },
+  "include": ["./src/**/*.tsx", "./src/**/*.ts", "index.ts"],
+  "exclude": ["node_modules"]
+}
